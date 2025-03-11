@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos de ingeniería estructural desarrollados por Amílcar Machacca Mayo, incluyendo diseño, análisis y construcción de estructuras.">
+    <title>Proyectos | Amílcar Machacca Mayo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">AM<span>.</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li><a href="projects.html" class="active">Proyectos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Projects Hero Section -->
+        <section class="projects-hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">Mis Proyectos</h1>
+                <p class="animate-on-scroll">Explora mi portafolio de proyectos en diseño estructural, análisis y desarrollo de software para ingeniería.</p>
+                
+                <!-- Projects Filter -->
+                <div class="projects-filter animate-on-scroll">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="structural-design">Diseño Estructural</button>
+                    <button class="filter-btn" data-filter="construction">Proyectos en Obra</button>
+                    <button class="filter-btn" data-filter="software">Desarrollo de Software</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section class="projects-gallery">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-item animate-on-scroll" data-category="structural-design" id="project1">
+                        <div class="project-image">
+                            <img src="assets/project1.jpg" alt="Diseño Estructural de Edificio Residencial">
+                        </div>
+                        <div class="project-details">
+                            <h3>Diseño Estructural de Edificio Residencial</h3>
+                            <p class="project-category">Diseño Estructural</p>
+                            <p class="project-description">Análisis y diseño estructural de un edificio de 12 pisos con consideraciones sísmicas en zona de alta actividad. Implementación de sistemas de aislamiento sísmico y disipadores de energía.</p>
+                            <div class="project-tech">
+                                <span>ETABS</span>
+                                <span>SAP2000</span>
+                                <span>AutoCAD</span>
+                            </div>
+                            <a href="#" class="btn btn-small project-details-btn">Ver Detalles</a>
+                        </div>
+                        <div class="project-modal">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <h2>Diseño Estructural de Edificio Residencial</h2>
+                                <div class="modal-gallery">
+                                    <img src="assets/project1-detail1.jpg" alt="Modelo 3D del edificio">
+                                    <img src="assets/project1-detail2.jpg" alt="Análisis de esfuerzos">
+                                    <img src="assets/project1-detail3.jpg" alt="Planos estructurales">
+                                </div>
+                                <div class="modal-description">
+                                    <h3>Descripción del Proyecto</h3>
+                                    <p>Este proyecto consistió en el diseño estructural completo de un edificio residencial de 12 pisos ubicado en una zona de alta actividad sísmica. El desafío principal fue garantizar la seguridad estructural mientras se optimizaban los recursos y costos de construcción.</p>
+                                    
+                                    <h3>Metodología</h3>
+                                    <ul>
+                                        <li>Análisis sísmico dinámico modal espectral</li>
+                                        <li>Diseño de elementos estructurales según normativa vigente</li>
+                                        <li>Implementación de sistemas de aislamiento sísmico</li>
+                                        <li>Optimización de secciones mediante análisis iterativo</li>
+                                    </ul>
+                                    
+                                    <h3>Resultados</h3>
+                                    <p>El diseño final cumplió con todos los requisitos normativos y de seguridad, logrando una reducción del 15% en el costo de materiales gracias a la optimización estructural. El edificio fue construido exitosamente y ha demostrado un excelente comportamiento ante eventos sísmicos moderados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-item animate-on-scroll" data-category="software" id="project2">
+                        <div class="project-image">
+                            <img src="assets/project2.jpg" alt="Software para Análisis Estructural">
+                        </div>
+                        <div class="project-details">
+                            <h3>Software para Análisis Estructural</h3>
+                            <p class="project-category">Desarrollo de Software</p>
+                            <p class="project-description">Desarrollo de una herramienta en Python para cálculo y optimización de estructuras mediante el método de elementos finitos (FEM). Incluye interfaz gráfica y generación automática de informes.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                                <span>PyQt</span>
+                            </div>
+                            <a href="#" class="btn btn-small project-details-btn">Ver Detalles</a>
+                        </div>
+                        <div class="project-modal">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <h2>Software para Análisis Estructural</h2>
+                                <div class="modal-gallery">
+                                    <img src="assets/project2-detail1.jpg" alt="Interfaz del software">
+                                    <img src="assets/project2-detail2.jpg" alt="Análisis de elementos finitos">
+                                    <img src="assets/project2-detail3.jpg" alt="Resultados gráficos">
+                                </div>
+                                <div class="modal-description">
+                                    <h3>Descripción del Proyecto</h3>
+                                    <p>Desarrollo de una aplicación de código abierto en Python para el análisis y optimización de estructuras mediante el método de elementos finitos. El software permite a los ingenieros estructurales realizar análisis complejos de manera eficiente y generar informes detallados.</p>
+                                    
+                                    <h3>Características Principales</h3>
+                                    <ul>
+                                        <li>Implementación completa del método de elementos finitos para análisis estructural</li>
+                                        <li>Interfaz gráfica intuitiva desarrollada con PyQt</li>
+                                        <li>Visualización avanzada de resultados con Matplotlib</li>
+                                        <li>Algoritmos de optimización para minimizar costos de materiales</li>
+                                        <li>Generación automática de informes en formato PDF</li>
+                                    </ul>
+                                    
+                                    <h3>Impacto</h3>
+                                    <p>El software ha sido adoptado por varias firmas de ingeniería y universidades como herramienta educativa. Ha permitido reducir significativamente el tiempo de análisis y diseño estructural, mejorando la eficiencia en proyectos reales.</p>
+                                    
+                                    <h3>Tecnologías Utilizadas</h3>
+                                    <p>Python, NumPy, SciPy, Matplotlib, PyQt, ReportLab</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-item animate-on-scroll" data-category="construction" id="project3">
+                        <div class="project-image">
+                            <img src="assets/project3.jpg" alt="Supervisión de Obra Civil">
+                        </div>
+                        <div class="project-details">
+                            <h3>Supervisión de Obra Civil</h3>
+                            <p class="project-category">Proyectos en Obra</p>
+                            <p class="project-description">Gestión y supervisión técnica de la construcción de un puente de concreto armado de 120 metros de longitud. Control de calidad y seguimiento de cronograma de ejecución.</p>
+                            <div class="project-tech">
+                                <span>MS Project</span>
+                                <span>AutoCAD</span>
+                                <span>Control de Calidad</span>
+                            </div>
+                            <a href="#" class="btn btn-small project-details-btn">Ver Detalles</a>
+                        </div>
+                        <div class="project-modal">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <h2>Supervisión de Obra Civil</h2>
+                                <div class="modal-gallery">
+                                    <img src="assets/project3-detail1.jpg" alt="Vista del puente">
+                                    <img src="assets/project3-detail2.jpg" alt="Proceso constructivo">
+                                    <img src="assets/project3-detail3.jpg" alt="Control de calidad">
+                                </div>
+                                <div class="modal-description">
+                                    <h3>Descripción del Proyecto</h3>
+                                    <p>Supervisión técnica integral de la construcción de un puente de concreto armado de 120 metros de longitud sobre un río con caudal variable. El proyecto incluyó la gestión de recursos, control de calidad y seguimiento del cronograma de ejecución.</p>
+                                    
+                                    <h3>Responsabilidades</h3>
+                                    <ul>
+                                        <li>Supervisión técnica de la ejecución de la obra</li>
+                                        <li>Control de calidad de materiales y procesos constructivos</li>
+                                        <li>Verificación del cumplimiento de especificaciones técnicas</li>
+                                        <li>Gestión de modificaciones y soluciones técnicas en campo</li>
+                                        <li>Elaboración de informes de avance y documentación técnica</li>
+                                    </ul>
+                                    
+                                    <h3>Resultados</h3>
+                                    <p>El proyecto se completó dentro del plazo establecido y con un estricto control de calidad. La estructura ha demostrado un excelente comportamiento estructural y funcional desde su puesta en servicio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-item animate-on-scroll" data-category="structural-design">
+                        <div class="project-image">
+                            <img src="assets/project4.jpg" alt="Análisis Sísmico de Estructura Industrial">
+                        </div>
+                        <div class="project-details">
+                            <h3>Análisis Sísmico de Estructura Industrial</h3>
+                            <p class="project-category">Diseño Estructural</p>
+                            <p class="project-description">Evaluación y reforzamiento sísmico de una estructura industrial existente. Implementación de técnicas avanzadas de análisis no lineal y diseño de refuerzos estructurales.</p>
+                            <div class="project-tech">
+                                <span>SAP2000</span>
+                                <span>ETABS</span>
+                                <span>Análisis No Lineal</span>
+                            </div>
+                            <a href="#" class="btn btn-small project-details-btn">Ver Detalles</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-item animate-on-scroll" data-category="software">
+                        <div class="project-image">
+                            <img src="assets/project5.jpg" alt="Algoritmo de Optimización Estructural">
+                        </div>
+                        <div class="project-details">
+                            <h3>Algoritmo de Optimización Estructural</h3>
+                            <p class="project-category">Desarrollo de Software</p>
+                            <p class="project-description">Desarrollo de un algoritmo basado en inteligencia artificial para la optimización de estructuras de acero. Reducción significativa de peso y costo manteniendo los requisitos de seguridad.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Algoritmos Genéticos</span>
+                                <span>Machine Learning</span>
+                            </div>
+                            <a href="#" class="btn btn-small project-details-btn">Ver Detalles</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-item animate-on-scroll" data-category="construction">
+                        <div class="project-image">
+                            <img src="assets/project6.jpg" alt="Rehabilitación Estructural de Edificio Histórico">
+                        </div>
+                        <div class="project-details">
+                            <h3>Rehabilitación Estructural de Edificio Histórico</h3>
+                            <p class="project-category">Proyectos en Obra</p>
+                            <p class="project-description">Evaluación, diseño y supervisión de la rehabilitación estructural de un edificio histórico de 150 años. Preservación de elementos arquitectónicos originales con refuerzo estructural moderno.</p>
+                            <div class="project-tech">
+                                <span>Rehabilitación</span>
+                                <span>Patrimonio</span>
+                                <span>Refuerzo Estructural</span>
+                            </div>
+                            <a href="#" class="btn btn-small project-details-btn">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2>¿Tienes un proyecto en mente?</h2>
+                    <p>Estoy disponible para colaborar en proyectos de ingeniería estructural, desarrollo de software y consultoría técnica.</p>
+                    <a href="contact.html" class="btn btn-primary">Contáctame</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">AM<span>.</span></a>
+                    <p>Ingeniero Estructural especializado en diseño, análisis y construcción de estructuras.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre Mí</a></li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociales</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tommy.sllb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/Milca-py" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/amilcar-machacca-mayo-7635622a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contacto@amilcarmachacca.com">contacto@amilcarmachacca.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+51123456789">+51 123 456 789</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amílcar Machacca Mayo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
+
