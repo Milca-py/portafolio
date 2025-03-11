@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 204 80% 40%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 210 20% 98%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 20% 98%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 204 80% 40%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 204 80% 50%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 210 20% 98%;
+    --accent: 262 83% 68%;
+    --accent-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 204 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Eliminar el efecto gradient-heading y reemplazarlo con un estilo normal */
+.gradient-heading {
+  @apply text-primary font-bold;
+}
+
+.animated-gradient-bg {
+  background: linear-gradient(-45deg, #0ea5e9, #10b981, #8b5cf6, #059669);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .card-hover-effect:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.theme-light {
+  --theme-bg: #ffffff;
+  --theme-card: #f8fafc;
+  --theme-card-border: #e2e8f0;
+  --theme-text: #1e293b;
+  --theme-text-muted: #64748b;
+  --theme-primary: #0284c7;
+  --theme-secondary: #10b981;
+  --theme-accent: #8b5cf6;
+}
+
+.theme-dark {
+  --theme-bg: #0f172a;
+  --theme-card: #1e293b;
+  --theme-card-border: #334155;
+  --theme-text: #f8fafc;
+  --theme-text-muted: #94a3b8;
+  --theme-primary: #38bdf8;
+  --theme-secondary: #34d399;
+  --theme-accent: #a78bfa;
+}
+
+.highlight-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--theme-primary), var(--theme-accent));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.highlight-card:hover::before {
+  opacity: 0.05;
+}
+
+.dark .highlight-card:hover::before {
+  opacity: 0.1;
+}
+
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--theme-primary), var(--theme-accent));
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-effect:hover::after {
+  opacity: 0.5;
+}
+
+.dark .glow-effect:hover::after {
+  opacity: 0.7;
+}
+
+.section-divider {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+
+.section-divider svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-divider.wave-top {
+  transform: rotate(180deg);
+}
+
+.section-divider.wave-bottom {
+  margin-top: -1px;
+}
+
