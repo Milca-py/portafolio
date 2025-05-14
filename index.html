@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amílcar Machacca Mayo | Structural Engineer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <header id="header">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <a href="#home">AM</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="#home" class="nav-link active">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="fade-in">Amílcar Machacca Mayo</h1>
+            <h2 class="fade-in delay-1">Structural Engineer</h2>
+            <p class="fade-in delay-2">Creating resilient and innovative structural solutions</p>
+            <div class="hero-cta fade-in delay-3">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bg"></div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Me</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>I'm Amílcar Machacca Mayo, a final-year Civil Engineering student specializing in structural engineering. My passion lies in creating innovative structural solutions and automating engineering processes.</p>
+              <p>Currently, I'm developing a Python library for structural analysis, combining my technical knowledge with programming skills to make structural engineering more efficient and accessible.</p>
+              <div class="skills">
+                <h3>Technical Skills</h3>
+                <div class="skill-list">
+                  <div class="skill">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar">
+                      <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <span class="skill-name">Revit</span>
+                    <div class="skill-bar">
+                      <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <span class="skill-name">AutoCAD</span>
+                    <div class="skill-bar">
+                      <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <span class="skill-name">ETABS</span>
+                    <div class="skill-bar">
+                      <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <span class="skill-name">SAP2000</span>
+                    <div class="skill-bar">
+                      <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <div class="image-container">
+                <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Engineering Professional">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-header">
+            <h2>My Portfolio</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="structural">Structural Analysis</button>
+            <button class="filter-btn" data-filter="automation">Automation</button>
+            <button class="filter-btn" data-filter="modeling">3D Modeling</button>
+          </div>
+          <div class="projects-grid" id="projects-grid">
+            <!-- Projects will be inserted by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Connect With Me</h3>
+              <p>Feel free to reach out if you're interested in my work or would like to collaborate on a project.</p>
+              <div class="social-links">
+                <a href="https://github.com/" target="_blank" class="social-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" class="social-link">
+                  <i class="fab fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://youtube.com/" target="_blank" class="social-link">
+                  <i class="fab fa-youtube"></i>
+                  <span>YouTube</span>
+                </a>
+                <a href="https://facebook.com/" target="_blank" class="social-link">
+                  <i class="fab fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="social-link">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h3>Send Me a Message</h3>
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <h3>Amílcar Machacca Mayo</h3>
+              <p>Structural Engineer</p>
+            </div>
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2025 Amílcar Machacca Mayo. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
